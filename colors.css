@@ -1,0 +1,50 @@
+body {
+  background: linear-gradient(to bottom right, black, gray) fixed;
+}
+
+.color_button {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  padding-top: 15.0em;
+  position: relative;
+  left: 15em;
+
+}
+
+.btn_layout {
+ width: 100px;
+ height: 100px;
+ font-size: 20px;
+ font-family: Luminari, fantasy;
+
+}
+
+#red{
+  background-color: red;
+}
+#blue{
+  background-color: blue;
+}
+#green{
+  background-color: green;
+}
+#yellow{
+  background-color: yellow;
+}
+#orange{
+  background-color: orange;
+}
+#purple{
+  background-color: purple;
+}
+#brown{
+  background-color: brown;
+}
+#cyan{
+  background-color: cyan;
+}
+#gray{
+  background-color: gray;
+}
