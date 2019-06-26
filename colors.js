@@ -1,6 +1,8 @@
 const changeColorDiv = document.querySelector(".color_button");
+const moveObject = document.querySelector(".color_button");
 
 changeColorDiv.addEventListener('click', changeColor)
+moveColors.addEventListener('click', moveColorObject)
 
 // ternary operator for green color second line
 //if the target.id is equal to green make it blank, otherwise make it to green
@@ -25,6 +27,15 @@ function changeColor(e){
   e.target.id === 'gray' ? e.target.id = '' : e.target.id = 'gray'
   }
 }
+// var offsetLeft = 0;
+// function moveColorObject(move){
+//  if (move.target.innerText === 'Gray'){
+//    offsetLeft += 20;
+//    moveObject.style.left = (offsetLeft)+"px";
+//  }
+//
+//
+// }
 // changeColorDiv.addEventListener('click', changeColorBack)
 //
 // let allColors = ['Green', 'Red', 'Blue', 'Orange', 'Purple', 'Yellow', 'Cyan'), 'Brown', 'Gray']
