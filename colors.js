@@ -1,8 +1,30 @@
 const changeColorDiv = document.querySelector(".color_button");
-const moveObject = document.querySelector(".color_button");
 
 changeColorDiv.addEventListener('click', changeColor)
-moveColors.addEventListener('click', moveColorObject)
+
+const move_red_Object = document.getElementById("move_red_btn");
+const move_blue_Object = document.getElementById("move_blue_btn");
+const move_green_Object = document.getElementById("move_green_btn");
+const move_yellow_Object = document.getElementById("move_yellow_btn");
+const move_orange_Object = document.getElementById("move_orange_btn");
+const move_cyan_Object = document.getElementById("move_cyan_btn");
+const move_brown_Object = document.getElementById("move_brown_btn");
+const move_purple_Object = document.getElementById("move_purple_btn");
+const move_gray_Object = document.getElementById("move_gray_btn");
+
+
+
+move_red_Object.addEventListener('click', moveColorObject)
+move_blue_Object.addEventListener('click', moveColorObject)
+move_green_Object.addEventListener('click', moveColorObject)
+move_yellow_Object.addEventListener('click', moveColorObject)
+move_orange_Object.addEventListener('click', moveColorObject)
+move_cyan_Object.addEventListener('click', moveColorObject)
+move_brown_Object.addEventListener('click', moveColorObject)
+move_purple_Object.addEventListener('click', moveColorObject)
+move_gray_Object.addEventListener('click', moveColorObject)
+
+
 
 // ternary operator for green color second line
 //if the target.id is equal to green make it blank, otherwise make it to green
@@ -27,29 +49,15 @@ function changeColor(e){
   e.target.id === 'gray' ? e.target.id = '' : e.target.id = 'gray'
   }
 }
-// var offsetLeft = 0;
-// function moveColorObject(move){
-//  if (move.target.innerText === 'Gray'){
-//    offsetLeft += 20;
-//    moveObject.style.left = (offsetLeft)+"px";
-//  }
-//
-//
-// }
-// changeColorDiv.addEventListener('click', changeColorBack)
-//
-// let allColors = ['Green', 'Red', 'Blue', 'Orange', 'Purple', 'Yellow', 'Cyan'), 'Brown', 'Gray']
-//
-//
-//
-// function changeColorBack(color){
-//
-//   for(var i = 0; i < allColors.length(); i++){
-//
-//     if color.target.innerText === allColors[i]
-//     color.target.id = ' '
-//
-//
-//   }
-//
-// }
+
+var changeColorDivX = 0;
+
+if (changeColorDiv.innerText === 'Red'){
+  moveColorObject();
+}
+
+function moveColorObject(e){
+
+
+
+}
